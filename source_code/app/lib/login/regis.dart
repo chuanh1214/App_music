@@ -1,7 +1,7 @@
 import 'package:app/login/request.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 class Reis extends StatefulWidget {
   const Reis({super.key});
@@ -101,8 +101,8 @@ class _ReisState extends State<Reis> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         minimumSize: Size(40, 40),
+                        backgroundColor: Colors.white,
                         elevation: 0,
-                        primary: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(50)))),

@@ -1,6 +1,7 @@
+import 'package:app/homePage/homePage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'login.dart';
 
@@ -103,12 +104,17 @@ class _LogState extends State<Log> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         minimumSize: Size(40, 40),
+                        backgroundColor: Colors.white,
                         elevation: 0,
-                        primary: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(50)))),
-                    onPressed: Clicked,
+                    // onPressed: Clicked,
+                    // tạm thời tạo đường dẫn đến trang profile trước
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
                     child: Text(
                       'Đăng nhập',
                       style: TextStyle(

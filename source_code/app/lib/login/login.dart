@@ -1,10 +1,10 @@
-import 'dart:ui';
+// import 'dart:ui';
 
 import 'package:app/login/regis.dart';
 import 'package:app/login/request.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -13,17 +13,6 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          leading: InkWell(
-            child: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(Icons.arrow_back),
-            ),
-          )),
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -160,8 +149,8 @@ class Login extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size(40, 40),
+                    backgroundColor: Colors.black,
                     elevation: 0,
-                    primary: Colors.black,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(50)))),
                 onPressed: () {

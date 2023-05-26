@@ -1,8 +1,9 @@
-import 'package:app/login/request.dart';
+// import 'package:app/login/request.dart';
 import 'package:app/sources/landing.dart';
+// import 'package:app/profile/profile.dart';
 import 'package:flutter/material.dart';
 
-import 'login/login.dart';
+// import 'login/login.dart';
 
 void main() {
   runApp(const AppMusic());
