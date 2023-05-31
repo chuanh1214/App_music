@@ -1,7 +1,7 @@
-import 'package:app/homePage/homePage.dart';
+import 'package:app/screens/list.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/src/widgets/framework.dart';
-// import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'login.dart';
 
@@ -99,28 +99,30 @@ class _LogState extends State<Log> {
               padding: const EdgeInsets.only(top: 20),
               child: SizedBox(
                 width: 150,
-                height: 30,
+                height: 40,
                 child: Container(
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         minimumSize: Size(40, 40),
-                        backgroundColor: Colors.white,
                         elevation: 0,
+                        primary: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(50)))),
-                    // onPressed: Clicked,
-                    // tạm thời tạo đường dẫn đến trang profile trước
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()));
-                    },
-                    child: Text(
-                      'Đăng nhập',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17,
-                        color: Colors.black,
+                    onPressed: Clicked,
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ListPage()));
+                      },
+                      child: Text(
+                        'Đăng nhập',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
