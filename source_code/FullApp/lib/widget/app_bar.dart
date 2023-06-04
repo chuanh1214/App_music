@@ -1,3 +1,4 @@
+import 'package:app/profile.dart';
 import 'package:flutter/material.dart';
 
 AppBar appBar(
@@ -31,9 +32,13 @@ AppBar appBar(
       ),
       Padding(
         padding: EdgeInsets.only(right: 8, left: 15),
-        child: Icon(
-          Icons.notifications_active_outlined,
-          size: 30,
+        child: IconButton(
+          icon: Icon(Icons.notifications_active_outlined),
+          iconSize: 30,
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => profile()));
+          },
         ),
       )
     ],
