@@ -1,12 +1,9 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
-AppBar appBar({
-  required IconData iconData,
-  required bool canBack,
-  required BuildContext context
-}) {
+AppBar appBar(
+    {required IconData iconData,
+    required bool canBack,
+    required BuildContext context}) {
   return AppBar(
     backgroundColor: Colors.transparent,
     elevation: 0,
