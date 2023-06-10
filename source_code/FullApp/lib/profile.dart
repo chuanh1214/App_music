@@ -40,14 +40,14 @@ class profile extends StatelessWidget {
                       'Dieu Linh Nguyen',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 32,
+                        fontSize: 28,
                       ),
                     ),
                     Text(
                       'linhnguyen@gmail.com',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28,
+                        fontSize: 24,
                       ),
                     ),
                   ],
