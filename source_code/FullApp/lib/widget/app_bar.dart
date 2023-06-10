@@ -20,14 +20,23 @@ AppBar appBar(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Hello Nhom 9',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          TextButton(
+            child: Text(
+              'Hello Nhom 9',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  color: Colors.white),
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => profile()));
+            },
           ),
-          Text(
-            'VietNam',
-            style: TextStyle(fontSize: 10),
-          )
+          // Text(
+          //   'VietNam',
+          //   style: TextStyle(fontSize: 10),
+          // )
         ],
       ),
       Padding(
@@ -36,8 +45,8 @@ AppBar appBar(
           icon: Icon(Icons.notifications_active_outlined),
           iconSize: 30,
           onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => profile()));
+            // Navigator.push(
+            //     context, MaterialPageRoute(builder: (context) => profile()));
           },
         ),
       )
