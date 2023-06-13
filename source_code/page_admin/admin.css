@@ -1,13 +1,13 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
-    width: 70%;
-    margin: 0 auto ;
-    
+body {
+    width: 100%;
+    margin: 0 auto;
+
 }
 
 .header {
@@ -19,53 +19,53 @@ body{
     align-items: center;
 }
 
-.header .search{
+.header .search {
     display: flex;
 }
 
-.header .search .headphone{
+.header .search .headphone {
     display: flex;
     margin-left: 100px;
     margin-right: 48px;
 }
 
-.header .search .headphone i{
+.header .search .headphone i {
     font-size: 60px;
     margin-right: 8px;
 }
 
-.header .search .headphone h2{
+.header .search .headphone h2 {
     margin-top: 16px;
     font-weight: 900;
     font-size: 32px;
 }
 
-.header input{
+.header input {
     height: 40px;
     margin-top: 10px;
     border: none;
 
 }
 
-.header button{
+.header button {
     height: 40px;
     margin-top: 10px;
     background-color: white;
     border: none;
     width: 32px;
-    background-color:blue;
+    background-color: blue;
 }
 
-.header .more{
+.header .more {
     display: flex;
 }
 
-.header .more1 i{
+.header .more1 i {
     font-size: 24px;
     margin: 10px 8px 0;
 }
 
-.header .more2{
+.header .more2 {
     display: flex;
     margin-right: 100px;
     margin-left: 24px;
@@ -73,23 +73,23 @@ body{
 
 }
 
-.header .more2 i{
+.header .more2 i {
     font-size: 40px;
     margin-right: 4px;
-    
+
 }
 
-.header .more2 h3{
-    
+.header .more2 h3 {
+
     margin-top: 12px;
-    
+
 }
 
-.content{
+.content {
     display: flex;
 }
 
-.content .list{
+.content .list {
     width: 30%;
     margin-top: 60px;
     border-right: 1px solid #000;
@@ -104,33 +104,32 @@ body{
     margin-bottom: 60px;
 }
 
-.list li i{
+.list li i {
     margin-right: 32px;
 }
 
-.content .main
-{
+.content .main {
     width: 70%;
 }
 
-.main .mainheader{
+.main .mainheader {
     width: 100%;
     height: 80px;
     background-color: #000;
 
 }
 
-.main .box{
+.main .box {
     display: flex;
     width: 90%;
-    margin: 0 auto ;
+    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 40px ;
+    margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
 }
 
-.main .box .box1{
+.main .box .box1 {
     width: 20%;
     height: 100px;
     border: 1px solid black;
@@ -140,27 +139,30 @@ body{
     font-size: 24px;
 }
 
-.box1 p{
+.box1 p {
     line-height: 100px;
 }
 
 .main .table {
     width: 90%;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: lightgray;
     border: 1px solid black;
 }
 
 
-th,td{
+th,
+td {
     font-size: 20px;
     text-align: center;
     padding: 24px 0;
-    
+
 
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
